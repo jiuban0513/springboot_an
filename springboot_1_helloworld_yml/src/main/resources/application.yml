@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /hello
+
+#自定义属性配置
+an:
+  custom:
+    msg: hi,springboot!
+    number: ${random.int}
+    number2: ${random.int[100,200]}
+    configuration: nihao,shuaige ${an.custom.msg} ${server.port} ${an.custom.number}***${an.custom.number2}
