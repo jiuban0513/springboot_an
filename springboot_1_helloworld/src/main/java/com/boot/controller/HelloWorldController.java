@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/")
 public class HelloWorldController {
 
+    //自定义属性配置
     @Value("${an.custom.configuration}")
     private String an;
 
